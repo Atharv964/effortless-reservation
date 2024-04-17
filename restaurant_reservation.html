@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="restaurant_reservation.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i> Effortless Reservation
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Restaurant Options Section -->
+    <div class="restaurant-options">
+        <h2>Choose Your Restaurant</h2>
+        <!-- List of restaurant options -->
+        <div class="restaurant-row">
+            <!-- Restaurant 1 -->
+            <div class="restaurant-option">
+                <div class="restaurant-image" style="background-image: url('https://i.ibb.co/9tHhp1H/restaurent1.jpg');"></div>
+                <div class="restaurant-info">
+                    <h3>Restaurant 1</h3>
+                    <p>Overall Star Rating: ⭐⭐⭐⭐</p>
+                    <p>Type: Vegetarian</p>
+                    <p>Status: Open</p>
+                    <button onclick="goToReservationForm('Restaurant 1')">Reserve</button>
+                </div>
+            </div>
+            <!-- Restaurant 2 -->
+            <div class="restaurant-option">
+                <div class="restaurant-image" style="background-image: url('https://i.ibb.co/JjxvBbh/restaarant2.jpg');"></div>
+                <div class="restaurant-info">
+                    <h3>Restaurant 2</h3>
+                    <p>Overall Star Rating: ⭐⭐⭐</p>
+                    <p>Type: Non-Vegetarian</p>
+                    <p>Status: Open</p>
+                    <button onclick="goToReservationForm('Restaurant 2')">Reserve</button>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-row">
+            <!-- Restaurant 3 -->
+            <div class="restaurant-option">
+                <div class="restaurant-image" style="background-image: url('https://i.ibb.co/9tHhp1H/restaurent1.jpg');"></div>
+                <div class="restaurant-info">
+                    <h3>Restaurant 3</h3>
+                    <p>Overall Star Rating: ⭐⭐⭐⭐</p>
+                    <p>Type: Vegetarian</p>
+                    <p>Status: Open</p>
+                    <button onclick="goToReservationForm('Restaurant 3')">Reserve</button>
+                </div>
+            </div>
+            <!-- Restaurant 4 -->
+            <div class="restaurant-option">
+                <div class="restaurant-image" style="background-image: url('https://i.ibb.co/mcf86cF/restaurent4.jpg');"></div>
+                <div class="restaurant-info">
+                    <h3>Restaurant 4</h3>
+                    <p>Overall Star Rating: ⭐⭐⭐</p>
+                    <p>Type: Vegetarian</p>
+                    <p>Status: Closed</p>
+                    <button onclick="goToReservationForm('Restaurant 4')">Reserve</button>
+                </div>
+            </div>
+        </div>
+        <!-- Restaurant 5 -->
+        <div class="restaurant-row single">
+            <div class="restaurant-option">
+                <div class="restaurant-image" style="background-image: url('https://i.ibb.co/jM3nb78/restaurent5.jpg');"></div>
+                <div class="restaurant-info">
+                    <h3>Restaurant 5</h3>
+                    <p>Overall Star Rating: ⭐⭐⭐</p>
+                    <p>Type: Non-Vegetarian</p>
+                    <p>Status: Open</p>
+                    <button onclick="goToReservationForm('Restaurant 5')">Reserve</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2024 Effortless Reservation. All rights reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function goToReservationForm(restaurantName) {
+            window.location.href = `restaurant_reservation_form.html?restaurant=${restaurantName}`;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+

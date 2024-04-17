@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Rooms</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="hotel_reservation.css">
+    <!-- Link to Font Awesome for star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-hotel"></i> Effortless Reservation
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Hotel Rooms Section -->
+    <div class="rooms-section">
+        <div class="room-card" id="standard-room">
+            <img src="https://i.ibb.co/1X6FLsF/standard-hotel.jpg" alt="Standard Hotel Room">
+            <h3>Standard Room</h3>
+            <p>999 rupees for 24 hours</p>
+            <button onclick="bookRoom('Standard Room')">Book</button>
+        </div>
+
+        <div class="room-card" id="deluxe-room">
+            <img src="https://i.ibb.co/3YSy4BY/deluxe-hotel.jpg" alt="Deluxe Hotel Room">
+            <h3>Deluxe Room</h3>
+            <p>1599 rupees for 24 hours</p>
+            <button onclick="bookRoom('Deluxe Room')">Book</button>
+        </div>
+
+        <div class="room-card" id="super-deluxe-room">
+            <img src="https://i.ibb.co/xGQrKfp/super-duluxe-hotel.jpg" alt="Super Deluxe Hotel Room">
+            <h3>Super Deluxe Room</h3>
+            <p>2999 rupees for 24 hours</p>
+            <button onclick="bookRoom('Super Deluxe Room')">Book</button>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <!-- Review 1 -->
+        <div class="review">
+            <p><strong>Atharv Dixit</strong></p>
+            <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </p>
+            <p>Great experience! The rooms were clean and comfortable.</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="review">
+            <p><strong>Sahil Chavan</strong></p>
+            <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </p>
+            <p>The service was good, and the staff was friendly.</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="review">
+            <p><strong>Prajwal Bhagat</strong></p>
+            <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <p>Amazing experience! Will definitely come back.</p>
+        </div>
+        <!-- Review 4 -->
+        <div class="review">
+            <p><strong>Pratik Ahire</strong></p>
+            <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </p>
+            <p>Comfortable rooms and excellent facilities.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2024 Effortless Reservation. All rights reserved.
+    </footer>
+
+    <!-- Include Font Awesome for star icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <!-- JavaScript function to handle room booking -->
+    <script>
+        function bookRoom(roomType) {
+            // Redirect to the hotel reservation form with the selected room type as a URL parameter
+            window.location.href = `hotel_reservation_form.html?roomType=${encodeURIComponent(roomType)}`;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

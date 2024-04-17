@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Restaurant Options Section */
+.restaurant-options {
+    text-align: center;
+    padding: 20px;
+}
+
+.restaurant-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.restaurant-option {
+    width: 48%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.restaurant-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.restaurant-info {
+    padding: 10px 0;
+}
+
+.restaurant-info h3 {
+    margin: 0;
+}
+
+.restaurant-info p {
+    margin: 5px 0;
+}
+
+.restaurant-info button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restaurant-info button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Single Restaurant for the middle of the page */
+.restaurant-row.single {
+    justify-content: center;
+    display: flex;
+}
+
+.restaurant-option.single {
+    width: 45%;
+}
+
+
+
+
+
